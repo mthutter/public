@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Project</title>
-  <style>
-    ul {
-      background-color: aqua;
-      word-spacing: 20px;
-      margin-left: 5px;
-      margin-right: 5px;
-      margin-top: 10px;
-      padding: 10px;
-      color: rgb(207, 207, 42);
-    }
- div {
-      text-align: center;
-    }
-
-    li {
-      display: inline;
-    }
-.secton1{
-  background-color: aquamarine;
-}
-    .section2 {
-      background-image: linear-gradient(to bottom, blue,lightblue);
-    }
-  </style>
-</head>
-<body>
-  <div class="section1">
-    <h1>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Project</title>
+    <link rel="stylesheet" href="css-project.css" />
+  </head>
+  <body>
+    <div class="header-bar">
+      <a href="#welcome-page">Home</a>
+      <a href="#skills-page">Skills</a>
+      <a href="#contact-page">Contact</a>
+    </div>
+    <div id="welcome-page">
+      <br />
       <h1>Welcome to my Portfolio!</h1>
-      <br>
-      <br>
-      <p>This is website I created to showcase my skills for website development using HTML for the structure and CSS
-        for the style.</p>
-  </div>
-  <br>
-  <hr>
-  <div>
-    <h1>Here are some of my Skills</h1>
-    <br>
-    <img src="../../IMAGES/paramount.jpg" alt="mountain">
-    <p>With my HTML skills I can add elements to my website for a better experience.</p>
-  </div>
-</body>
+      <br />
+      <p>
+        This is website I created to showcase my skills for website development
+        using HTML for the structure and CSS for the style.
+      </p>
+      <br />
+      <hr />
+    </div>
+    <div id="skills-page">
+      <table>
+        <tr>
+          <th colspan="2">Here are some of my skills</th>
+        </tr>
+        <tr>
+          <td><img src="../../IMAGES/paramount.jpg" alt="scene" /></td>
+          <td>
+            With my HTML skills I can add elements to my website for a better
+            experience.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            With my CSS skills I can edit my website to make it more eye
+            catching.
+          </td>
+          <td><img src="../../IMAGES/paramount.jpg" alt="scene" /></td>
+        </tr>
+      </table>
+      <br />
+      <hr />
+    </div>
+    <div id="contact-page">
+      <h2>Contact Information</h2>
+      <table>
+        <tr>
+          <td>E-Mail</td>
+          <td>mthutter@me.com</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>719-200-1629</td>
+        </tr>
+      </table>
+      <div id="end-page">
+        <br />
+      </div>
+    </div>
+  </body>
 </html>
